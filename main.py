@@ -1,5 +1,4 @@
-def simp(num)
-    num = 7
+def simp(num):
     k = 0
     for item in range(2, num // 2 + 1):
         if num % item == 0:
@@ -11,4 +10,6 @@ def simp(num)
 
 
 try:
-
+    simp(10)
+except Exception as ex:
+    print(f'Error information: {ex}')
